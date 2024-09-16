@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+ html, body {
+    scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    padding: 1rem 0;
+}
+  .navbar img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+.navbar {
+    background-color: #003366;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    z-index: 999;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.logo {
+     margin-right: 575px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 1rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+    font-size: 20px;
+}
+ .nav-links a:hover{
+    color: tomato;
+ }
+ .navbar-toggle {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    align-items: left;
+    visibility: hidden;
+    position: fixed;
+  
+  }
+
+#home {
+    color: white;
+    font-family: 'fantasy';
+    position: relative;
+}
+ #home img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  #home .bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+
+  }
+  .name h1{
+     font-size:50px;
+     position: absolute;
+     top: 5%;
+     left: 5%;
+  }
+  #home .special{
+    font-size:40px;
+    position: absolute;
+    top: 13%;
+    left: 5%;
+  }
+    #home p{
+    font-size:22px;
+    font-weight: bold;
+    width:350px;
+    height: 50px;
+    position: absolute;
+    top: 25%;
+    left: 5%; 
+    }
+      #home button a{
+        color: white;
+        text-decoration: none;
+      }
+     #home button{
+        border-radius: 30px;
+        width: 400px;
+        height: 40px;
+        cursor: pointer;
+        font-size: 30px;
+        border: none;
+        margin-top: 500px;
+        margin-left: 1100px;
+        color: white;
+        background-color: orangered;
+     }
+.services {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.services h2 {
+     font-size: 50px;
+    margin-bottom: 1.5rem;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-box {
+    background: #f4f4f4;
+    padding: 1.5rem;
+    margin: 1rem;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+.service-box img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.gallery {
+    padding: 2rem;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 50px;
+    margin-bottom: 1.5rem;
+}
+  .gallery p{
+    color: black;
+    font-size: 25px;
+    font-family:sans-serif;
+
+  }
+.gallery-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.gallery-container img {
+    width: 45%;
+    margin: 1rem 0;
+    border-radius: 10px;
+}
+.gallery .experince{
+   font-family: sans-serif;
+    width: 100%;
+    height: 200px;
+    color: #000;
+}
+.experince{
+    display: inline-block;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.experince img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+  #contact{
+    position: relative;
+    background-color: #333;
+    width: 100%;
+    height: 400px;
+    color: white;
+    font-family: sans-serif;
+    text-transform: capitalize;
+     }
+      #contact h1 {
+        font-size: 50px;
+       margin-bottom: 1.5rem;
+       text-align: center;
+   }
+    #contact .cards{
+        display: flex;
+        justify-content: space-around;
+    }
+     .cards-1 p{
+        width: 150px;
+     }
+footer {
+   
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 22px;
+    }
+    
+    #home img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .navbar {
+        background-color:#003366;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        z-index: 999;
+        top: 0;
+        width: 340px;
+        height: 55px;
+        position: fixed;
+      }
+       .navbar img{
+        margin-left: 270px;
+       }
+     .navbar .logo{
+        visibility: hidden;
+     }
+     .navbar{
+      z-index: 999;
+     }
+    .navbar-toggle{
+     visibility: visible;
+    }
+    .nav-links.show {
+        display: flex;
+    }
+    .nav-links li {
+        margin-top: 10px;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        height: 100vh;
+        width: 140px;
+        background-color:#003366 ;
+        padding: 10px;
+         
+    }
+      #home img{
+     width: 340px;
+     height: 850px;    
+    }
+     #home h1{
+        font-size: 30px;
+     }
+     #home .special{
+        margin-top: 25px;
+        font-size: 25px;
+     }
+      #home .bg p{
+        margin-top: 10px;
+        width: 250px;
+      }
+      #home button{
+         margin-top: 800px;
+        margin-left: 50px;
+         width: 200px;
+      }
+    .services-container {
+        flex-direction: column;
+    }
+
+    .service-box {
+        width: 80%;
+        margin: 1rem auto;
+    }
+
+
+    .nav-links {
+        flex-direction: column;
+        display: none;
+    }
+
+    .nav-links li {
+        margin: 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .gallery-container img {
+        width: 90%;
+    }
+}
+
+   .gallery .experince{
+    width: 300px;
+    height: 800px;
+
+   }
+    #contact h1{
+      font-size: 30px;
+    }
+
+      #contact{
+        position: relative;
+        height: 1000px;
+      }
+      #contact .cards{
+        left: 4%;
+        position: absolute;
+        display: block;
+      }
+       footer{
+        margin-top: 750px;
+       }
