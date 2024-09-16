@@ -250,7 +250,7 @@ footer {
         padding: 10px;
         z-index: 999;
         top: 0;
-        width: 340px;
+        width: 390px;
         height: 55px;
         position: fixed;
       }
@@ -285,8 +285,8 @@ footer {
          
     }
       #home img{
-     width: 340px;
-     height: 850px;    
+     width: 640px;
+     height: 990px;    
     }
      #home h1{
         font-size: 30px;
@@ -300,7 +300,7 @@ footer {
         width: 250px;
       }
       #home button{
-         margin-top: 800px;
+         margin-top: 900px;
         margin-left: 50px;
          width: 200px;
       }
